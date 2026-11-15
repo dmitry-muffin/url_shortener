@@ -15,7 +15,8 @@ import java.util.Scanner;
 
 public class ShortenerChecks {
     private static final String URL = "https://example.com";
-    private static final Settings SETTINGS = new Settings(Duration.ofSeconds(2), 1, 2, 5, "short.local/", Path.of("data/links.json"));
+    private static final Settings SETTINGS = new Settings(
+            Duration.ofSeconds(2), 1, 2, 5, "short.local/", Path.of("data/links.json"));
     private final TestClock clock = new TestClock();
     private final Shortener service = new Shortener(SETTINGS, clock);
     private final List<URI> opened = new ArrayList<>();
