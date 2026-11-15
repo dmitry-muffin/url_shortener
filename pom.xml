@@ -24,6 +24,7 @@
     </dependencies>
 
     <build>
+        <defaultGoal>compile exec:java</defaultGoal>
         <plugins>
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
