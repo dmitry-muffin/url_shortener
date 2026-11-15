@@ -31,6 +31,20 @@
                 <configuration>
                     <mainClass>Main</mainClass>
                 </configuration>
+                <executions>
+                    <execution>
+                        <id>shortener-checks</id>
+                        <phase>test</phase>
+                        <goals>
+                            <goal>java</goal>
+                        </goals>
+                        <configuration>
+                            <mainClass>ShortenerChecks</mainClass>
+                            <classpathScope>test</classpathScope>
+                            <skip>${skipTests}</skip>
+                        </configuration>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>
